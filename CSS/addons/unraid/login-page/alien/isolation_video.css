@@ -1,13 +1,7 @@
 @import url("https://theme-park.dev/CSS/addons/unraid/login-page/alien/alien_base.css");
 :root {
     --main-bg: transparent;
-    --logo:  ____  _               _____ _  ___    _  ____  _      ______ 
-|  _ \| |        /\   / ____| |/ / |  | |/ __ \| |    |  ____|
-| |_) | |       /  \ | |    | ' /| |__| | |  | | |    | |__   
-|  _ <| |      / /\ \| |    |  < |  __  | |  | | |    |  __|  
-| |_) | |____ / ____ \ |____| . \| |  | | |__| | |____| |____ 
-|____/|______/_/    \_\_____|_|\_\_|  |_|\____/|______|______|
-                                                              ;
+    --logo: url(https://theme-park.dev/CSS/addons/unraid/login-page/alien/logo/wings_green.png) center no-repeat;
     --text-color: #000000;
     --input-color: #37f592;
     --link-color: #37f592;
