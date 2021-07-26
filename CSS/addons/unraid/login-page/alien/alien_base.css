@@ -243,3 +243,84 @@ body {
     -webkit-box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
     box-shadow: inset 0px 0px 0px 2px var(--text-color) !important;
 }
+/*CUSTOM HEADER*/
+.custom-text-header {
+    white-space: pre;
+    letter-spacing: 2px;
+    font-family: var(--text-font);
+    -webkit-font-smoothing: none;
+    font-weight: 900;
+    line-height: 1.5;
+    color: var(--custom-text-header) !important;
+    text-shadow: 0 0 20px var(--custom-text-header-shadow);
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation-duration: 0.01s;
+    animation-name: var(--custom-text-header-animation);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: 900;
+}
+.custom-text-header:after {
+    content: "";
+    position: absolute;
+    top: 135px;
+    right: -15px;
+    background-color: var(--custom-text-header);
+    vertical-align: top;
+    width: 20px;
+    height: 2px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+  @keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+      border: 10px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+      border: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+  }
+
+  ::selection {
+    background: var(--selection-color); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--selection-color); /* Gecko Browsers */
+  }
+
+
+/*
+                     __                             ___       __  
+   ____  ____  _____/ /__________  ____ ___  ____  / (_)___  / /__
+  / __ \/ __ \/ ___/ __/ ___/ __ \/ __ `__ \/ __ \/ / / __ \/ //_/
+ / / / / /_/ (__  ) /_/ /  / /_/ / / / / / / /_/ / / / / / / ,<   
+/_/ /_/\____/____/\__/_/   \____/_/ /_/ /_/\____/_/_/_/ /_/_/|_|  
+                                                                 
+*/
+/*
+<div class="custom-text-header"> <pre>                     __                             ___       __  
+   ____  ____  _____/ /__________  ____ ___  ____  / (_)___  / /__
+  / __ \/ __ \/ ___/ __/ ___/ __ \/ __ '__ \/ __ \/ / / __ \/ //_/
+ / / / / /_/ (__  ) /_/ /  / /_/ / / / / / / /_/ / / / / / / ,&lt;   
+/_/ /_/\____/____/\__/_/   \____/_/ /_/ /_/\____/_/_/_/ /_/_/|_|  
+                                                                 </pre> </div>
+*/
